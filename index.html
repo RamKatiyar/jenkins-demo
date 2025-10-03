@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins HTML Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2b5797;
+            color: white;
+            padding: 20px;
+        }
+        main {
+            margin: 40px;
+        }
+        footer {
+            background: #222;
+            color: #ddd;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Jenkins Practice</h1>
+    </header>
+    <main>
+        <h2>This is a sample index.html page</h2>
+        <p>You can use this file to test Jenkins build and deployment pipelines.</p>
+        <p>Build triggered at: <span id="datetime"></span></p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Jenkins Demo</p>
+    </footer>
+
+    <script>
+        // Display current date & time
+        document.getElementById("datetime").textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
